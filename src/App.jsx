@@ -5,9 +5,9 @@ import Main from './layouts/Main'
 import ProductList from './pages/ProductList'
 import ProudctInfo from './pages/ProductInfo'
 import AddProduct from './pages/AddProduct'
+import Login from './pages/Login'
 
 function App() {
-
 
   return (
     <>
@@ -20,7 +20,8 @@ function App() {
             <Route path='/products' element={<ProductList />} />
             {/* :id -> products/1,2,3과 같음 */}
             <Route path='/products/:id' element={<ProudctInfo />} />
-            <Route path='/add-product' element={<AddProduct />} />
+            <Route path='/add-product' element={<AddProduct />} />              
+            <Route path='/signin' element={<Login />} />            
           </Routes>
         </BrowserRouter>
       </div>      

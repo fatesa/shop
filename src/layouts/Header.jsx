@@ -7,8 +7,10 @@ const Header = () => {
             <Link to='/'>Home</Link>
             <Link to='/products'>상품목록</Link>
             <Link to='/add-product'>상품등록</Link>
+            <Link to='/signin'>로그인</Link>            
         </header>
     )
 }
 
 export default Header
+ 

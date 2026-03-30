@@ -14,6 +14,7 @@
   padding: 20px;
 }
 
-.product-list{
+.product-list, .sign-in, .add-product{
   padding: 20px;
+  text-align: center;
 }
