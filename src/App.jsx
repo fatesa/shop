@@ -5,7 +5,7 @@ import Main from './layouts/Main'
 import ProductList from './pages/ProductList'
 import ProudctInfo from './pages/ProductInfo'
 import AddProduct from './pages/AddProduct'
-import Login from './pages/Login'
+import SignIn from './pages/SignIn'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
             {/* :id -> products/1,2,3과 같음 */}
             <Route path='/products/:id' element={<ProudctInfo />} />
             <Route path='/add-product' element={<AddProduct />} />              
-            <Route path='/signin' element={<Login />} />            
+            <Route path='/signin' element={<SignIn />} />            
           </Routes>
         </BrowserRouter>
       </div>      

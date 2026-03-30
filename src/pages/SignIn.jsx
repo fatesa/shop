@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react"
 import {users} from '../data/users'
 
-const Login = () => {
+const SignIn = () => {
 //입력 데이터를 객체로 통합
     const [loginData, setloginData] = useState({
         userId : '',
@@ -77,4 +77,4 @@ const Login = () => {
         </div>
     )
 }
-export default Login
+export default SignIn
