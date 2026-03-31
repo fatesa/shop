@@ -5,24 +5,44 @@ const ProductList = () => {
 
     return (
         <section className="product-list">
-            <h1>상품 목록</h1>
-            <ul>
-                {products.map((product)=>(
-                    <div key={product.id}>
-                        <h3>
-                            <Link to={`/products/${product.id}`}>{product.name}</Link>
-                            </h3>
-                        <p>가격 : {product.price}</p>
-                        <p>설명 : {product.description}</p>
-                    </div>
+            <h2>상품 목록</h2>
+            {/* <ul> */}
+            <table className="table-list">
+                <thead>
+                    <tr>
+                        <th>상품ID</th>
+                        <th>상품명</th>
+                        <th>가격</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {products.map((product)=>(
+                        <tr key={product.id}>
+                            <td>{product.id}</td>
+                            <td>{product.name}</td>
+                            <td>{product.price}</td>
+                            <td>{product.description}</td>
+                        </tr>
                 ))}
-                <hr />
-                <div>
-                    <Link to="/add-product">
-                        <button>상품 등록하기</button>
-                    </Link>
+                </tbody>
+            </table>
+            {/* {products.map((product)=>(
+                <div key={product.id}>
+                    <h3>
+                        <Link to={`/products/${product.id}`}>{product.name}</Link>
+                        </h3>
+                    <p>가격 : {product.price}</p>
+                    <p>설명 : {product.description}</p>
                 </div>
-            </ul>
+            ))} */}
+                
+            <div className="btn-add">
+                <Link to="/add-product">
+                    <button>상품 등록하기</button>
+                </Link>
+            </div>
+            {/* </ul> */}
         </section>
     )
 }
