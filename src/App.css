@@ -10,6 +10,28 @@
   text-decoration: none;
 }
 
+.header-user{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* 요소간의 간격 */
+  color: #fff;
+  margin-left: 12px;
+}
+
+.logout-btn{
+  padding: 6px 12px;
+  border: lpx solid #ff9f1c;
+  border-radius: 6px;
+  color: #ff9f1c;
+  cursor: pointer;
+  background-color: transparent; /* 투명하게 */
+}
+
+.logout-btn:horver{
+  background-color: #ff9f1c;
+  color: #333;
+}
+
 .main{
   padding: 20px;
 }
