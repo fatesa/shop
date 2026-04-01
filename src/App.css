@@ -28,7 +28,7 @@
   background-color: transparent; /* 투명하게 */
 }
 
-.logout-btn:horver{
+.logout-btn::horver{
   background-color: #ff9f1c;
   color: #333;
 }
